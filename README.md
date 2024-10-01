@@ -1,10 +1,3 @@
-<style>
-  body {
-    background-color: black;
-    color: white;
-  }
-</style>
-
 ![Cryptonite header](/assets/header_cryptonite.jpg)
 
 ## Day 1-10
