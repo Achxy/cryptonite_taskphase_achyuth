@@ -3,7 +3,10 @@
 ### Cat
 `cat` short for concatenate, is to merge multiple files (or single file) and then to stream it to standard outputs.
 ![not the pet I/O](../assets/not_the_pet.png)
+
 ### Catting absolute paths
+Similar to the previous command, this time we'll invoke the `cat` command with `/flag` (which is an absolute path) as it's argument.
+![catting absolute I/O](../assets/catting_absolute.png)
 
 ### More catting practice
 ### Grepping
