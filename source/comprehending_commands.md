@@ -13,6 +13,9 @@ Exactly the same as previous challenge, except this time the absolute path is `/
 ![more catting I/O](../assets/more_catting.png)
 
 ### Grepping
+Every pwn college flag begins with a `pwn.college{` boiler, we can use it as a base for our search and subsequently provide it as our first argument, the second argument is the absolute path to the file.
+![grepping needle in a haystack I/O](../assets/grepping_needle_in_a_haystack.png)
+
 ### Listing files
 ### Touching files
 ### Removing files
