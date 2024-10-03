@@ -17,6 +17,8 @@ Every pwn college flag begins with a `pwn.college{` boiler, we can use it as a b
 ![grepping needle in a haystack I/O](../assets/grepping_needle_in_a_haystack.png)
 
 ### Listing files
+First we need to head on over to `/challenge`, which we will do using the `cd` command, then then we'll use `ls` to list all files and folders in the current directory and we'll find the the renamed run file and execute it to get the flag.
+![listing files I/O](../assets/listing_files.png)
 ### Touching files
 ### Removing files
 ### Hidden files
