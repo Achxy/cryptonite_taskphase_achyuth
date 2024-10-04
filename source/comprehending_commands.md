@@ -49,7 +49,18 @@ Yahaha, you found me! Here is your flag:
 pwn.college{w13q5HsVzoIDX9cbh1rMkHm3j1D.dhjM4QDLxUjN@czW}
 hacker@commands~listing-files:/challenge$ 
 ```
+
 ### Touching files
+We are supposed to create two empty files `/tmp/pwn` and `/tmp/college`, so we provide them as arguments to `touch` and then run `/challenge/run` to complete the challenge.
+```bash
+hacker@commands~touching-files:~$ touch /tmp/pwn
+hacker@commands~touching-files:~$ touch /tmp/college
+hacker@commands~touching-files:~$ /challenge/run
+Success! Here is your flag:
+pwn.college{0nGpcXEzrlZ3EbaE4hqhvDGpSsH.dBzM4QDLxUjN0czW}
+hacker@commands~touching-files:~$ 
+```
+
 ### Removing files
 ### Hidden files
 
