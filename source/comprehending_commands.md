@@ -2,23 +2,53 @@
 
 ### Cat
 `cat` short for concatenate, is to merge multiple files (or single file) and then to stream it to standard outputs.
-![not the pet I/O](../assets/not_the_pet.png)
+```bash
+hacker@commands~cat-not-the-pet-but-the-command:~$ cat flag
+pwn.college{MI5072BCTFOq8FwP2sN7msOhUmg.dFzN1QDLxUjN@czW}
+hacker@commands~cat-not-the-pet-but-the-command:~$ 
+```
 
 ### Catting absolute paths
 Similar to the previous challenge, this time we'll invoke the `cat` command with `/flag` (which is an absolute path) as it's argument.
-![catting absolute I/O](../assets/catting_absolute.png)
+```bash
+hacker@commands~catting-absolute-paths:~$ cat /flag
+pwn.college{YTK1lvgqmEIB8XcUkV1R8T8z73It.d1TM5QDLxUjN@czW}
+hacker@commands~catting-absolute-paths:~$
+```
   
 ### More catting practice
 Exactly the same as previous challenge, except this time the absolute path is `/usr/share/binfmts/flag`
-![more catting I/O](../assets/more_catting.png)
+```bash
+hacker@commands~more-catting-practice:~$ cat /usr/share/binfmts/flag
+pwn.college{Ie@sZKke4B101B4gU_6RB1j0SjD.dBjM5QDLxUjN@czW}
+hacker@commands~more-catting-practice:~$ 
+```
 
 ### Grepping
 Every pwn college flag begins with a `pwn.college{` boiler, we can use it as a base for our search and subsequently provide it as our first argument, the second argument is the absolute path to the file.
-![grepping needle in a haystack I/O](../assets/grepping_needle_in_a_haystack.png)
+```bash
+hacker@commands~grepping-for-a-needle-in-a-haystack:~$ grep pwn.college /challenge/data.txt
+pwn.college{EoosSQJLRDsYUrHaecNKxhT--vx.ddTM4QDLxUjN@czW}
+hacker@commands~grepping-for-a-needle-in-a-haystack:~$ 
+```
 
 ### Listing files
 First we need to head on over to `/challenge`, which we will do using the `cd` command, then then we'll use `ls` to list all files and folders in the current directory and we'll find the the renamed run file and execute it to get the flag.
-![listing files I/O](../assets/listing_files.png)
+```bash
+hacker@commands~listing-files:/$ cd challenge
+hacker@commands~listing-files:/challenge$ ls -lha
+
+total 20K
+drwxr-xr-x 1 root root 4.0K Oct 3 09:42 .
+drwxr-xr-x 1 root root 4.0K Oct 3 09:42 ..
+-rwsr-xr-x 1 root root 70 May 14 07:38 
+-rwsr-xr-x 1 root root 83 May 14 07:38 
+-rwsr-xr-x 1 root root 790 May 14 07:38 
+hacker@commands~listing-files:/challenge$ ./10184-renamed-run-31609
+Yahaha, you found me! Here is your flag:
+pwn.college{w13q5HsVzoIDX9cbh1rMkHm3j1D.dhjM4QDLxUjN@czW}
+hacker@commands~listing-files:/challenge$ 
+```
 ### Touching files
 ### Removing files
 ### Hidden files
