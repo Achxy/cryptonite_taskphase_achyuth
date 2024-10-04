@@ -96,3 +96,15 @@ Here is your flag:
 pwn.college{gA2BOSg5ICp7PJI-qa-NWYagU79.dhDN1QDLxUjN0czW}
 hacker@paths~position-yet-elsewhere:/etc/apt/sources.list.d$ 
 ```
+
+### Implicit relative paths, from `/`
+Since the terminal is positioned `/` we can use the relative path `challenge/run` insted of the absolute path `/challenge/run`
+```bash
+hacker@paths~implicit-relative-paths-from-:~$ cd /
+hacker@paths~implicit-relative-paths-from-:/$ challenge/run
+Correct!!!
+challenge/run is a relative path, invoked from the right directory!
+Here is your flag:
+pwn.college{wHY7WRPWu-MRCTCoKGy5hDxgucD.dlDN1QDLxUjN0czW}
+hacker@paths~implicit-relative-paths-from-:/$ 
+```
