@@ -133,3 +133,12 @@ Here is your flag:
 pwn.college{0tHR_k0nvLWS9VFcK-AcLyHNN7x.dFTN1QDLxUjN0czW}
 hacker@paths~implicit-relative-path:/challenge$ 
 ```
+
+### Home sweet home
+We'll provide `~/x` which expands to `/home/hacker/x` as the argument to `/challenge/run`, as the argument meets all the necessary criterion.
+```bash
+hacker@paths~home-sweet-home:~$ /challenge/run ~/x
+Writing the file to /home/hacker/x!
+... and reading it back to you:
+pwn.college{4RdQtsgNt5Z9oozp3Q-yIC-C36O.dNzM4QDLxUjN0czW}
+```
