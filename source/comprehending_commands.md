@@ -84,3 +84,14 @@ hacker@commands~hidden-files:/$
 ```
 
 ### An epic filesystem quests
+
+### Making directories
+We use `mkdir` to create directories, we use the `-p` flag to create the parent directory if it doesn't exist, then we provide the `/tmp/pwn/college` argument to `touch` command for it to create the empty file `college` essentially completing the challenge.
+```bash
+hacker@commands~making-directories:~$ mkdir -p /tmp/pwn
+hacker@commands~making-directories:~$ touch /tmp/pwn/college
+hacker@commands~making-directories:~$ /challenge/run
+Success! Here is your flag:
+pwn.college{gl1o5JobwjfBOrn26OVNx97n06u.dFzM4QDLxUjN0czW}
+hacker@commands~making-directories:~$ 
+```
