@@ -63,3 +63,20 @@ Here is your flag:
 pwn.college{ozN9bStIfPxl1n0M4IPSKAH9Yu0.dZDN1QDLxUjN0czW}
 hacker@paths~position-thy-self:/etc/apt/sources.list.d$ cd /
 ```
+
+### Position elsewhere
+Exactly the same as the previous challenge.
+```bash
+hacker@paths~position-elsewhere:~$ cd /
+hacker@paths~position-elsewhere:/$ challenge/run
+Incorrect...
+You are not currently in the /usr/share/doc/fontconfig directory.
+Please use the `cd` utility to change directory appropriately.
+hacker@paths~position-elsewhere:/$ cd /usr/share/doc/fontconfig
+hacker@paths~position-elsewhere:/usr/share/doc/fontconfig$ /challenge/run
+Correct!!!
+/challenge/run is an absolute path, invoked from the right directory!
+Here is your flag:
+pwn.college{U7walSaRDY5a-qleLKJHee4fh36.ddDN1QDLxUjN0czW}
+hacker@paths~position-elsewhere:/usr/share/doc/fontconfig$
+```
