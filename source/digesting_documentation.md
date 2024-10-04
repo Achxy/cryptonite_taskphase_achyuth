@@ -148,3 +148,24 @@ hacker@man~helpful-programs:~$ /challenge/challenge -g 73
 Correct usage! Your flag: pwn.college{Ux0PF73wHxqhBQM4UOXDm3TQZgh.ddjM4QDLxUjN0czW}
 hacker@man~helpful-programs:~$ 
 ```
+
+### Help for Builtins
+Exactly the same as the previous problem except we use the `help` this time.
+```bash
+hacker@man~help-for-builtins:~$ help challenge
+challenge: challenge [--fortune] [--version] [--secret SECRET]
+    This builtin command will read you the flag, given the right arguments!
+    
+    Options:
+      --fortune		display a fortune
+      --version		display the version
+      --secret VALUE	prints the flag, if VALUE is correct
+
+    You must be sure to provide the right value to --secret. That value
+    is "cVS0IFT8".
+hacker@man~help-for-builtins:~$ challenge --secret cVS0IFT8
+Correct! Here is your flag!
+pwn.college{cVS0IFT82l14LvMzYlupNGDhB2W.dRTM5QDLxUjN0czW}
+
+hacker@man~help-for-builtins:~$ 
+```
