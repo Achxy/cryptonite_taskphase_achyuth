@@ -20,3 +20,42 @@ Correct argument! Here is the not-the-flag file:
 pwn.college{cw6okzp3rE70Xq8mXv-FGz-_YLu.dVjM5QDLxUjN0czW}
 hacker@man~learning-complex-usage:~$ 
 ```
+
+### Reading manuals
+We get the manual of `challenge` using `man challenge` which clearly mentions `--wymzbt NUM` -> `print the flag if NUM is 852`
+```bash
+hacker@man~reading-manuals:~$ man challenge
+
+CHALLENGE(1)                                                        Challenge Commands                                                        CHALLENGE(1)
+
+NAME
+       /challenge/challenge - print the flag!
+
+SYNOPSIS
+       challenge OPTION
+
+DESCRIPTION
+       Output the flag when called with the right arguments.
+
+       --fortune
+              read a fortune
+
+       --version
+              output version information and exit
+
+       --wymzbt NUM
+              print the flag if NUM is 852
+
+AUTHOR
+       Written by Zardus.
+
+REPORTING BUGS
+       The repository for this dojo: <https://github.com/pwncollege/linux-luminarium/>
+
+SEE ALSO
+       man(1) bash-builtins(7)
+
+pwn.college                                                              May 2024                                                             CHALLENGE(1)
+hacker@man~reading-manuals:~$ /challenge/challenge --wymzbt 852
+Correct usage! Your flag: pwn.college{wKDF85ym2JFAzMDbODtpWY0j68-.dRTM4QDLxUjN0czW}
+```
