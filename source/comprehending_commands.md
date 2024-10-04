@@ -152,3 +152,13 @@ hacker@commands~finding-files:~$ cat /opt/rappel/.git/objects/4c/flag
 pwn.college{0E0QmYvCIr7v-zFjim5dY3TnDOG.dJzM4QDLxUjN0czW}
 hacker@commands~finding-files:~$ 
 ```
+
+### Linking files
+We use `ln` for linking, `-s` flag for it to be symbolic, the "original" file `/flag`, and the link file `/home/hacker/not-the-flag`. 
+```bash
+hacker@commands~linking-files:~$ ln -s /flag /home/hacker/not-the-flag
+hacker@commands~linking-files:~$ /challenge/catflag
+About to read out the /home/hacker/not-the-flag file!
+pwn.college{47FieVS7M71Dm8nEuoopfbDYmDD.dlTM1UDLxUjN0czW}
+hacker@commands~linking-files:~$ 
+```
