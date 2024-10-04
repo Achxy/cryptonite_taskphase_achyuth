@@ -120,3 +120,16 @@ Here is your flag:
 pwn.college{I5k3QEGdGX6FsJecDQhwm86XxvC.dBTN1QDLxUjN0czW}
 hacker@paths~explicit-relative-paths-from-:/$ 
 ```
+
+### Implicit relative path
+We'll move on over to `challenge`, and use `.` to explicitly mention the `run` file is in the current working directory and execute it.
+```bash
+hacker@paths~implicit-relative-path:~$ cd /
+hacker@paths~implicit-relative-path:/$ cd challenge
+hacker@paths~implicit-relative-path:/challenge$ ./run
+Correct!!!
+./run is a relative path, invoked from the right directory!
+Here is your flag:
+pwn.college{0tHR_k0nvLWS9VFcK-AcLyHNN7x.dFTN1QDLxUjN0czW}
+hacker@paths~implicit-relative-path:/challenge$ 
+```
