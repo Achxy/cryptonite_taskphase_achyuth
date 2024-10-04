@@ -62,6 +62,14 @@ hacker@commands~touching-files:~$
 ```
 
 ### Removing files
+We provide the `delete_me` argument to `rm` command to remove the file `delete_me`
+```bash
+hacker@commands~removing-files:~$ rm delete_me
+hacker@commands~removing-files:~$ /challenge/check
+Excellent removal. Here is your reward:
+pwn.college{0RKG4mLY6RK5ng_uwDXq4x2zTS1.dZTOwUDLxUjN0czW}
+hacker@commands~removing-files:~$ 
+```
 ### Hidden files
 
 ### An epic filesystem quests
