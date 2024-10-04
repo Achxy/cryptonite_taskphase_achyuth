@@ -128,3 +128,23 @@ hacker@man~searching-for-manuals:~$ /challenge/challenge --cueity 407
 Correct usage! Your flag: pwn.college{4cDuX0-eVB_Z7PMXHityvi0v3GS.dZTM4QDLxUjN0czW}
 hacker@man~searching-for-manuals:~$ 
 ```
+
+### Helpful programs
+We get the help text of `/challenge/challenge` with `--help` flag, we use `-p` to get the secret value and enter it as an argument to `-g` to get the flag.
+```bash
+hacker@man~helpful-programs:~$ /challenge/challenge --help
+usage: a challenge to make you ask for help [-h] [--fortune] [-v] [-g GIVE_THE_FLAG] [-p]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --fortune             read your fortune
+  -v, --version         get the version number
+  -g GIVE_THE_FLAG, --give-the-flag GIVE_THE_FLAG
+                        get the flag, if given the correct value
+  -p, --print-value     print the value that will cause the -g option to give you the flag
+hacker@man~helpful-programs:~$ /challenge/challenge -p
+The secret value is: 73
+hacker@man~helpful-programs:~$ /challenge/challenge -g 73
+Correct usage! Your flag: pwn.college{Ux0PF73wHxqhBQM4UOXDm3TQZgh.ddjM4QDLxUjN0czW}
+hacker@man~helpful-programs:~$ 
+```
