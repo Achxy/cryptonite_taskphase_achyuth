@@ -108,3 +108,15 @@ Here is your flag:
 pwn.college{wHY7WRPWu-MRCTCoKGy5hDxgucD.dlDN1QDLxUjN0czW}
 hacker@paths~implicit-relative-paths-from-:/$ 
 ```
+
+### Explicit relative paths, from `/`
+We use the period symbol `.` to make the path explicit (`/challenge/run` is implicit while `./challenge/run` is explicit).
+```bash
+hacker@paths~explicit-relative-paths-from-:~$ cd /
+hacker@paths~explicit-relative-paths-from-:/$ ./challenge/run
+Correct!!!
+./challenge/run is a relative path, invoked from the right directory!
+Here is your flag:
+pwn.college{I5k3QEGdGX6FsJecDQhwm86XxvC.dBTN1QDLxUjN0czW}
+hacker@paths~explicit-relative-paths-from-:/$ 
+```
