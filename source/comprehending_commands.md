@@ -70,6 +70,17 @@ Excellent removal. Here is your reward:
 pwn.college{0RKG4mLY6RK5ng_uwDXq4x2zTS1.dZTOwUDLxUjN0czW}
 hacker@commands~removing-files:~$ 
 ```
+
 ### Hidden files
+We head on over to the root `/`, and then proceed to list all the files including the "hidden" ones (prepended with `.`). We find the flag file `.flag-18132218732151` as our point of interest and read it.
+```bash
+hacker@commands~hidden-files:~$ cd /
+hacker@commands~hidden-files:/$ ls -a
+.   .dockerenv            bin   challenge  etc   lib    lib64   media  nix  proc  run   srv  tmp  var
+..  .flag-18132218732151  boot  dev        home  lib32  libx32  mnt    opt  root  sbin  sys  usr
+hacker@commands~hidden-files:/$ cat .flag-18132218732151 
+pwn.college{kObpsNzgeom9FeLoW1FDMAbyJyG.dBTN4QDLxUjN0czW}
+hacker@commands~hidden-files:/$ 
+```
 
 ### An epic filesystem quests
