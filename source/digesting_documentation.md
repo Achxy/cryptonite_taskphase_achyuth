@@ -59,3 +59,13 @@ pwn.college                                                              May 202
 hacker@man~reading-manuals:~$ /challenge/challenge --wymzbt 852
 Correct usage! Your flag: pwn.college{wKDF85ym2JFAzMDbODtpWY0j68-.dRTM4QDLxUjN0czW}
 ```
+
+### Searching manuals
+We use `/` to search in the man pages, and `n` & `N` to traverse over the positive matches.
+```bash
+hacker@man~searching-manuals:~$ man challenge
+hacker@man~searching-manuals:~$ /challenge/challenge --nuybjx
+Initializing...
+Correct usage! Your flag: pwn.college{AART6m7FIdjRWwMTIPRhdn2HQm_.dVTM4QDLxUjN0czW}
+hacker@man~searching-manuals:~$ 
+```
