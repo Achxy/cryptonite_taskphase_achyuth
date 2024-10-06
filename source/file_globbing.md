@@ -55,3 +55,13 @@ You got it! Here is your flag!
 pwn.college{gGMXJazVmJSnpzrPGpyirF3l6J0.dVjM4QDLxUjN0czW}
 hacker@globbing~mixing-globs:/challenge/files$
 ```
+
+### Exclusionary globbing
+We use `^` to exclude, with `[^pwn]` the first character must not not be `p`, `w`, or `n`, and with the wildcard `*`, the rest of the characters can be anything, essentially forming the glob `[^pwn]*`.
+```bash
+hacker@globbing~exclusionary-globbing:~$ cd /challenge/files
+hacker@globbing~exclusionary-globbing:/challenge/files$ /challenge/run [^pwn]*
+You got it! Here is your flag!
+pwn.college{I5Tx1LOj1gfKjhvXCn9X2WMOQKi.dZjM4QDLxUjN0czW}
+hacker@globbing~exclusionary-globbing:/challenge/files$ 
+```
