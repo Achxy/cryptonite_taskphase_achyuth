@@ -42,3 +42,16 @@ You got it! Here is your flag!
 pwn.college{06uro4ewkH6aLnp8HHaPhOhZaM2.dRjM4QDLxUjN0czW}
 hacker@globbing~matching-paths-with-:~$ 
 ```
+
+### Mixing globs
+We use `/challenge/files/[cep]*` to match the files `challenging`, `educational`, and `pwning` because no other files in the `files` directory starts with the letter `c`, `e`, or `p`.
+```bash
+hacker@globbing~mixing-globs:~$ cd /challenge/files
+hacker@globbing~mixing-globs:/challenge/files$ ls
+amazing    challenging  educational  great  incredible  kind      magical  optimistic  queenly  splendid   uplifting   wonderful  youthful
+beautiful  delightful   fantastic    happy  jovial      laughing  nice     pwning      radiant  thrilling  victorious  xenial     zesty
+hacker@globbing~mixing-globs:/challenge/files$ /challenge/run [cep]*
+You got it! Here is your flag!
+pwn.college{gGMXJazVmJSnpzrPGpyirF3l6J0.dVjM4QDLxUjN0czW}
+hacker@globbing~mixing-globs:/challenge/files$
+```
