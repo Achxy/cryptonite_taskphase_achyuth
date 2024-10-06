@@ -231,3 +231,14 @@ is your flag:
 pwn.college{k2QlzBDVSLLUyQ3mzlMROfXCZ00.dBDO0UDLxUjN0czW}
 hacker@piping~writing-to-multiple-programs:~$ 
 ```
+
+### Split-piping stderr and stdout
+Exactly the same as the previous challenges, this time we redirect `hack` to `/challenge/planet` using `>` (which is implicitly `1>`, ie,
+stdout), and to `/challenge/the` using `2>` which is standard error. Process substitution is used.
+```bash
+hacker@piping~split-piping-stderr-and-stdout:~$ /challenge/hack > >(/challenge/planet) 2> >(/challenge/the)
+Congratulations, you have learned a redirection technique that even experts 
+struggle with! Here is your flag:
+pwn.college{QnvXsZS5GwWALiWLKsSicF_4Zq2.dFDNwYDLxUjN0czW}
+hacker@piping~split-piping-stderr-and-stdout:~$ 
+```
