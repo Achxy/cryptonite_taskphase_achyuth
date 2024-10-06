@@ -197,3 +197,25 @@ hacker@piping~grepping-errors:~$ /challenge/run 2>&1 | grep pwn.college
 pwn.college{UCCVR2V9r51PRmICTikAKDjYkzH.dVDM5QDLxUjN0czW}
 hacker@piping~grepping-errors:~$ 
 ```
+
+### Duplicating piped data with tee
+We pipe the stdout of `/challenge/pwn` to `tee` which pipes it to `~/intercept` and `/challenge/college`,
+we understand the "secret" usage of `/challenge/pwn` by reading contents of `~/intercept`.
+```bash
+hacker@piping~duplicating-piped-data-with-tee:~$ /challenge/pwn | tee ~/intercept | /challenge/college
+Processing...
+The input to 'college' does not contain the correct secret code! This code 
+should be provided by the 'pwn' command. HINT: use 'tee' to intercept the 
+output of 'pwn' and figure out what the code needs to be.
+hacker@piping~duplicating-piped-data-with-tee:~$ cat intercept
+Usage: /challenge/pwn --secret [SECRET_ARG]
+
+SECRET_ARG should be "wPuE-FSt"
+hacker@piping~duplicating-piped-data-with-tee:~$ /challenge/pwn --secret wPuE-FSt | tee ~/intercept | /challenge/college
+Processing...
+WARNING: you are overwriting file /home/hacker/intercept with tee's output...
+Correct! Passing secret value to /challenge/college...
+Great job! Here is your flag:
+pwn.college{wPuE-FStCMm5URRh7Jcd_iRmVXs.dFjM5QDLxUjN0czW}
+hacker@piping~duplicating-piped-data-with-tee:~$ 
+```
