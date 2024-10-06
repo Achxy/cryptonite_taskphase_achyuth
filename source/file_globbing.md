@@ -33,3 +33,12 @@ You got it! Here is your flag!
 pwn.college{U4SSbBMcKZx_ucQ8T-3sdVzaVui.dNjM4QDLxUjN0czW}
 hacker@globbing~matching-with-:/challenge/files$
 ```
+
+### Matching paths with []
+We use `/challenge/files/file_[absh]` to get the absolute path of the files `file_a`, `file_b`, `file_s`, and `file_h` like `/challenge/files/file_a`, `/challenge/files/file_b`, `/challenge/files/file_s`, and `/challenge/files/file_h`.
+```bash
+hacker@globbing~matching-paths-with-:~$ /challenge/run /challenge/files/file_[absh]
+You got it! Here is your flag!
+pwn.college{06uro4ewkH6aLnp8HHaPhOhZaM2.dRjM4QDLxUjN0czW}
+hacker@globbing~matching-paths-with-:~$ 
+```
