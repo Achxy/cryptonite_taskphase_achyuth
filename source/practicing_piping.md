@@ -219,3 +219,15 @@ Great job! Here is your flag:
 pwn.college{wPuE-FStCMm5URRh7Jcd_iRmVXs.dFjM5QDLxUjN0czW}
 hacker@piping~duplicating-piped-data-with-tee:~$ 
 ```
+
+### Writing to multiple programs
+We pipe the output of `/challenge/hack`, we pipe it too `tee`, then we use process substitution on `/challenge/the` by writing it as
+`>(/challenge/the)`, there by temporarily creating a file in `/dev/fd/...` asssociated with it which we will be used for piping, then
+the out of `tee` is piped to `/challenge/planet`
+```bash
+hacker@piping~writing-to-multiple-programs:~$ /challenge/hack | tee >(/challenge/the) | /challenge/planet
+Congratulations, you have duplicated data into the input of two programs! Here 
+is your flag:
+pwn.college{k2QlzBDVSLLUyQ3mzlMROfXCZ00.dBDO0UDLxUjN0czW}
+hacker@piping~writing-to-multiple-programs:~$ 
+```
