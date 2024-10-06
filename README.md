@@ -2,12 +2,12 @@
 
 ## Day 1-10
 
-- **Hello Hackers**
-- **Pondering Paths**
-- **Comprehending Commands**
-- **Digesting Documentation**
-- **File Globbing**
-- **Practicing Piping**
+- [**Hello Hackers**](./source/hello_hackers.md)
+- [**Pondering Paths**](./source/pondering_paths.md)
+- [**Comprehending Commands**](./source/comprehending_commands.md)
+- [**Digesting Documentation**](./source/digesting_documentation.md)
+- [**File Globbing**](./source/file_globbing.md)
+- [**Practicing Piping**](./source/practicing_piping.md)
 
 ---
 
