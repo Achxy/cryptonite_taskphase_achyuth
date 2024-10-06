@@ -23,3 +23,13 @@ You ran me with the working directory of /challenge! Here is your flag:
 pwn.college{08xArZ215whR4fC1uPdLo2iYYok.dJjM4QDLxUjN0czW}
 hacker@globbing~matching-with-:/challenge$ 
 ```
+
+### Matching with []
+We use `/challenge/files/file_[absh]` to match the files `file_a`, `file_b`, `file_s`, and `file_h`.
+```bash
+hacker@globbing~matching-with-:~$ cd /challenge/files
+hacker@globbing~matching-with-:/challenge/files$ /challenge/run file_[absh]
+You got it! Here is your flag!
+pwn.college{U4SSbBMcKZx_ucQ8T-3sdVzaVui.dNjM4QDLxUjN0czW}
+hacker@globbing~matching-with-:/challenge/files$
+```
