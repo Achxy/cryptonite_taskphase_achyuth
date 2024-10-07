@@ -19,3 +19,15 @@ Yahaha, you found me! Here is your flag:
 pwn.college{0WI4dfksOHHIlTFPx8cweNHfvSm.dhzM4QDLxUjN0czW}
 Now I will sleep for a while (so that you could find me with 'ps').
 ```
+
+### Killing processes
+```bash
+hacker@processes~killing-processes:~$ ps -ef | grep dont_run
+hacker        73      71  0 14:57 ?        00:00:00 /challenge/dont_run
+hacker       127      75  0 15:00 pts/2    00:00:00 grep --color=auto dont_run
+hacker@processes~killing-processes:~$ kill 73
+hacker@processes~killing-processes:~$ /challenge/run
+Great job! Here is your payment:
+pwn.college{0_Va5UVLgjkG0OyJT0mf-xKHI7k.dJDN4QDLxUjN0czW}
+hacker@processes~killing-processes:~$ 
+```
