@@ -75,3 +75,12 @@ You've set the PWN variable properly! As promised, here is the flag:
 pwn.college{o7WxcK4pI4bQU5QAIK_PSjVV15Y.dhzN1QDLxUjN0czW}
 hacker@variables~reading-input:~$
 ```
+
+### Reading files
+Direct `/challenge/read_me` to stdin of `read` which assigns the value of that to `PWN`.
+```bash
+hacker@variables~reading-files:~$ read PWN < /challenge/read_me
+You've set the PWN variable properly! As promised, here is the flag:
+pwn.college{Msikko_KBrBiMvM_ehjMFAL0bt5.dBjM4QDLxUjN0czW}
+hacker@variables~reading-files:~$ 
+```
