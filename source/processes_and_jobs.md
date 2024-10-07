@@ -76,3 +76,21 @@ Yay, I found another version of me! Here is the flag:
 pwn.college{0x0lguIPcEdD3aVRnClrdy9WwfE.dVDN4QDLxUjN0czW}
 hacker@processes~suspending-processes:~$ 
 ```
+
+### Resuming processes
+We run `run`, suspend it with `^Z`, then run use `fg` command to resume it and brings it forth to the foreground of the terminal.
+```bash
+hacker@processes~resuming-processes:~$ /challenge/run
+Let's practice resuming processes! Suspend me with Ctrl-Z, then resume me with 
+the 'fg' command! Or just press Enter to quit me!
+^Z
+[1]+  Stopped                 /challenge/run
+hacker@processes~resuming-processes:~$ fg
+/challenge/run
+I'm back! Here's your flag:
+pwn.college{U5J1wBLbV1UTEMKRKbSwqIMwL1K.dZDN4QDLxUjN0czW}
+Don't forget to press Enter to quit me!
+
+Goodbye!
+hacker@processes~resuming-processes:~$ 
+```
