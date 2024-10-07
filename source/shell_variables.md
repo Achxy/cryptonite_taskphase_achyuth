@@ -54,3 +54,14 @@ hacker@variables~printing-exported-variables:~$ env | grep pwn.college
 FLAG=pwn.college{4GQ44ufapoF6FZn3ntb_jFL9KkA.dhTN1QDLxUjN0czW}
 hacker@variables~printing-exported-variables:~$
 ```
+
+### Storing command output
+We use command substitution `$(/challenge/run)` to run and stream the output to `PWN` and then read it using `echo`.
+```bash
+hacker@variables~storing-command-output:~$ PWN=$(/challenge/run)
+Congratulations! You have read the flag into the PWN variable. Now print it out 
+and submit it!
+hacker@variables~storing-command-output:~$ echo $PWN
+pwn.college{Irv1kMbbk69dOCD4HgO9DlnIvSe.dVzN0UDLxUjN0czW}
+hacker@variables~storing-command-output:~$ 
+```
