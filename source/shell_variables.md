@@ -46,3 +46,11 @@ You've set the PWN variable to the proper value!
 You've set the COLLEGE variable to the proper value!
 hacker@variables~exporting-variables:~$ 
 ```
+
+### Printing Exported Variables
+We use `env` to get all the environment variables and pipe it to `grep` to search for the `pwn.college` pattern.
+```bash
+hacker@variables~printing-exported-variables:~$ env | grep pwn.college
+FLAG=pwn.college{4GQ44ufapoF6FZn3ntb_jFL9KkA.dhTN1QDLxUjN0czW}
+hacker@variables~printing-exported-variables:~$
+```
