@@ -21,6 +21,7 @@ Now I will sleep for a while (so that you could find me with 'ps').
 ```
 
 ### Killing processes
+We find every process with `ps -ef`, pipe it to `grep`, find the pattern `dont_run`, get `PID` of `/challenge/dont_run` and `kill` it.
 ```bash
 hacker@processes~killing-processes:~$ ps -ef | grep dont_run
 hacker        73      71  0 14:57 ?        00:00:00 /challenge/dont_run
