@@ -17,3 +17,13 @@ You've set the PWN variable properly! As promised, here is the flag:
 pwn.college{IHaWy-lTCGQTPko73DnzUaHRaF5.dlTN1QDLxUjN0czW}
 hacker@variables~setting-variables:~$ 
 ```
+
+### Multi-word variables
+We use quotes `"` here because `COLLEGE YEAH` contains a space and we don't want the shell to terminate the variable
+assignment context.
+```bash
+hacker@variables~multi-word-variables:~$ PWN="COLLEGE YEAH"
+You've set the PWN variable properly! As promised, here is the flag:
+pwn.college{IbwxAXGIPWKuHRrYD02Lizt0as6.dBjN1QDLxUjN0czW}
+hacker@variables~multi-word-variables:~$ 
+```
