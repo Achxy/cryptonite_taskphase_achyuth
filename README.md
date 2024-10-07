@@ -12,8 +12,8 @@
 
 ## Day 11-20
 - [**Shell Variables**](./source/shell_variables.md)
-- **Processes and Jobs**
-- **Perceiving Permissions**
-- **Untangling Users**
-- **Chaining Commands**
-- **Pondering PATH**
+- [**Processes and Jobs**](./source/processes_and_jobs.md)
+- [**Perceiving Permissions**](./source/perceiving_permissions.md)
+- [**Untangling Users**](./source/untangling_users.md)
+- [**Chaining Commands**](./source/chaining_commands.md)
+- [**Pondering PATH**](./source/pondering_path.md)
