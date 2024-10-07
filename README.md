@@ -11,8 +11,7 @@
 
 
 ## Day 11-20
-
-- [**Shell Variables**]((./source/shell_variables.md))
+- [**Shell Variables**](./source/shell_variables.md)
 - **Processes and Jobs**
 - **Perceiving Permissions**
 - **Untangling Users**
