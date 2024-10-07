@@ -44,3 +44,35 @@ Good job! You have used Ctrl-C to interrupt this process! Here is your flag:
 pwn.college{kMn_2xVj6bKPdosT-88pjacl-EU.dNDN4QDLxUjN0czW}
 hacker@processes~interrupting-processes:~$ 
 ```
+
+### Suspending Processes
+We send `^Z` code to an existing instance of `run`, then run a new instance of it to get the flag.
+```bash
+hacker@processes~suspending-processes:~$ /challenge/run
+I'll only give you the flag if there's already another copy of me running in 
+this terminal... Let's check!
+
+UID          PID    PPID  C STIME TTY          TIME CMD
+root          99      82  0 15:09 pts/1    00:00:00 bash /challenge/run
+root         101      99  0 15:09 pts/1    00:00:00 ps -f
+
+I don't see a second me!
+
+To pass this level, you need to suspend me and launch me again! You can 
+background me with Ctrl-Z or, if you're not ready to do that for whatever 
+reason, just hit Enter and I'll exit!
+^Z
+[1]+  Stopped                 /challenge/run
+hacker@processes~suspending-processes:~$ /challenge/run
+I'll only give you the flag if there's already another copy of me running in 
+this terminal... Let's check!
+
+UID          PID    PPID  C STIME TTY          TIME CMD
+root          99      82  0 15:09 pts/1    00:00:00 bash /challenge/run
+root         106      82  0 15:09 pts/1    00:00:00 bash /challenge/run
+root         108     106  0 15:09 pts/1    00:00:00 ps -f
+
+Yay, I found another version of me! Here is the flag:
+pwn.college{0x0lguIPcEdD3aVRnClrdy9WwfE.dVDN4QDLxUjN0czW}
+hacker@processes~suspending-processes:~$ 
+```
