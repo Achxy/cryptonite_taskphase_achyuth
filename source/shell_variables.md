@@ -65,3 +65,13 @@ hacker@variables~storing-command-output:~$ echo $PWN
 pwn.college{Irv1kMbbk69dOCD4HgO9DlnIvSe.dVzN0UDLxUjN0czW}
 hacker@variables~storing-command-output:~$ 
 ```
+
+### Reading input
+We use `read`, followed by `-p` to give the prompt, and then the variable `PWN` and we enter `COLLEGE` into stdin.
+```bash
+hacker@variables~reading-input:~$ read -p "You actually read this, Cryptonite team? " PWN
+You actually read this, Cryptonite team? COLLEGE
+You've set the PWN variable properly! As promised, here is the flag:
+pwn.college{o7WxcK4pI4bQU5QAIK_PSjVV15Y.dhzN1QDLxUjN0czW}
+hacker@variables~reading-input:~$
+```
