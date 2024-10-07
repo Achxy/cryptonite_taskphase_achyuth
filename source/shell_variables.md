@@ -27,3 +27,22 @@ You've set the PWN variable properly! As promised, here is the flag:
 pwn.college{IbwxAXGIPWKuHRrYD02Lizt0as6.dBjN1QDLxUjN0czW}
 hacker@variables~multi-word-variables:~$ 
 ```
+
+### Exporting variables
+We set `COLLEGE=PWN` without using `export`. However, we do use `export` for `PWN`, which is assigned the value `COLLEGE`.
+This makes `PWN` accessible to child processes, unlike `COLLEGE`.
+```bash
+hacker@variables~exporting-variables:~$ COLLEGE=PWN
+You've set the COLLEGE variable to the proper value!
+hacker@variables~exporting-variables:~$ export PWN=COLLEGE
+You've set the PWN variable to the proper value!
+You've set the COLLEGE variable to the proper value!
+hacker@variables~exporting-variables:~$ /challenge/run
+CORRECT!
+You have exported PWN=COLLEGE and set, but not exported, COLLEGE=PWN. Great 
+job! Here is your flag:
+pwn.college{stTFyph2SpHCXSjfsVPWR_2RPfp.dJjN1QDLxUjN0czW}
+You've set the PWN variable to the proper value!
+You've set the COLLEGE variable to the proper value!
+hacker@variables~exporting-variables:~$ 
+```
