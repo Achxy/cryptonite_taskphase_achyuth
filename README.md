@@ -9,11 +9,10 @@
 - [**File Globbing**](./source/file_globbing.md)
 - [**Practicing Piping**](./source/practicing_piping.md)
 
----
 
 ## Day 11-20
 
-- **Shell Variables**
+- [**Shell Variables**]((./source/shell_variables.md))
 - **Processes and Jobs**
 - **Perceiving Permissions**
 - **Untangling Users**
