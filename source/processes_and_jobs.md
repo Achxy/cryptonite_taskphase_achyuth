@@ -181,3 +181,16 @@ hacker@processes~starting-backgrounded-processes:~$
 [1]+  Done                    /challenge/run
 hacker@processes~starting-backgrounded-processes:~$ 
 ```
+
+### Process exit codes
+Execute `/challenge/get-code` to run the process, then use `echo $?` to display its exit code. Next, provide this exit code as an argument to `/challenge/submit-code` to successfully retrieve the flag.
+```bash
+hacker@processes~process-exit-codes:~$ /challenge/get-code
+Exiting with an error code!
+hacker@processes~process-exit-codes:~$ echo $?
+34
+hacker@processes~process-exit-codes:~$ /challenge/submit-code 34
+CORRECT! Here is your flag:
+pwn.college{UOfoWVvE3lDhFAescFrk77OXDRC.dljN4UDLxUjN0czW}
+hacker@processes~process-exit-codes:~$ 
+```
