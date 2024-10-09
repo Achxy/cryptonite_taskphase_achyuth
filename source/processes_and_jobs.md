@@ -163,3 +163,21 @@ YES! Great job! I'm now running in the foreground. Hit Enter for your flag!
 pwn.college{4GARBCxRslMc1117tcHN-81vXQ1.dhDN4QDLxUjN0czW}
 hacker@processes~foregrounding-processes:~$ 
 ```
+
+### Starting background processes
+Launch the `/challenge/run` command with an `&` to start it directly in the background. This ensures the process runs actively without being suspended, allowing the terminal to remain available for other commands.
+```bash
+hacker@processes~starting-backgrounded-processes:~$ /challenge/run &
+[1] 99
+
+
+Yay, you started me in the background! Because of that, this text will probably 
+overlap weirdly with the shell prompt, but you're used to that by now...
+
+Anyways! Here is your flag!
+pwn.college{oM5MUUcqrQT6jb9JEqsPVlN1O3d.dlDN4QDLxUjN0czW}
+hacker@processes~starting-backgrounded-processes:~$
+
+[1]+  Done                    /challenge/run
+hacker@processes~starting-backgrounded-processes:~$ 
+```
