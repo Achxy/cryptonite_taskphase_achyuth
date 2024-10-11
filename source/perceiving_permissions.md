@@ -37,3 +37,13 @@ hacker@permissions~changing-permissions:~$ cat /flag
 pwn.college{kzQDu1XTQcAngBwupUGbR99czWC.dNzNyUDLxUjN0czW}
 hacker@permissions~changing-permissions:~$ 
 ```
+
+### Executable files
+Add execute permissions for the user by running `chmod u+x /challenge/run`. This grants the `hacker` user the ability to execute the `/challenge/run` program. After modifying the permissions, execute the program with `/challenge/run` to receive the flag.
+```bash
+hacker@permissions~executable-files:~$ chmod u+x /challenge/run
+hacker@permissions~executable-files:~$ /challenge/run
+Successful execution! Here is your flag:
+pwn.college{Qxk2Qv4ZFSatihegc_xfIoNhAI0.dJTM2QDLxUjN0czW}
+hacker@permissions~executable-files:~$ 
+```
