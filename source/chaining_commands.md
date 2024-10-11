@@ -27,3 +27,14 @@ Correct! Here is your flag:
 pwn.college{0ac9nP_z0U-uB7mgShHw5szyV_G.dhTM5QDLxUjN0czW}
 hacker@chaining~redirecting-script-output:~$ 
 ```
+
+### Executable shell scripts
+Make file `y.sh` with content `/challenge/solve`, add permision for execution of `y.sh` to user `hacker` with `u+s` using `chmod`, then execute the file with `./y.sh`.
+```bash
+hacker@chaining~executable-shell-scripts:~$ echo /challenge/solve > y.sh
+hacker@chaining~executable-shell-scripts:~$ chmod u+x y.sh
+hacker@chaining~executable-shell-scripts:~$ ./y.sh
+Congratulations on your shell script execution! Your flag:
+pwn.college{4HPzPm4lyZFbJ20VQ3Kv74ulINo.dRzNyUDLxUjN0czW}
+hacker@chaining~executable-shell-scripts:~$ 
+```
