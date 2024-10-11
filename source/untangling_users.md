@@ -39,3 +39,11 @@ Congratulations, you have become Zardus! Here is your flag:
 pwn.college{IQHGSeYgXlVrLTDL12GlPojiZWa.ddTN0UDLxUjN0czW}
 zardus@users~cracking-passwords:/home/hacker$ 
 ```
+
+### Using sudo
+Use the `sudo cat /flag` command to execute `cat /flag` with root privileges. 
+```bash
+hacker@users~using-sudo:~$ sudo cat /flag
+pwn.college{cooC13BFH2k7V0RGokrJLbs1Y2T.dhTN0UDLxUjN0czW}
+hacker@users~using-sudo:~$ 
+```
