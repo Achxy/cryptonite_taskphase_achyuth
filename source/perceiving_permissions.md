@@ -495,4 +495,42 @@ hacker@permissions~permissions-setting-practice:~$ cat /flag
 pwn.college{ozHqljocLwtsyeJ2kSsF26bxroJ.dNTM5QDLxUjN0czW}
 hacker@permissions~permissions-setting-practice:~$ 
 ```
-\
+
+### The SUID bit
+Set the SUID bit on `/challenge/getroot` by running `chmod u+s /challenge/getroot`, allowing it to execute with root privileges. Execute `/challenge/getroot` to spawn a root shell. In the root shell, use `cat /flag` to read and obtain the flag.
+```bash
+hacker@permissions~the-suid-bit:~$ chmod u+s /challenge/getroot
+hacker@permissions~the-suid-bit:~$ /challenge/getroot
+SUCCESS! You have set the suid bit on this program, and it is running as root! 
+Here is your shell...
+root@permissions~the-suid-bit:~# ls -lha
+total 100K
+drwxr-xr-x 7 hacker hacker 4.0K Oct  6 15:06 .
+drwxr-xr-x 1 root   root   4.0K Oct  4 23:05 ..
+-rw------- 1 hacker hacker  382 Oct  1 13:22 .ICEauthority
+-rw------- 1 hacker hacker 6.9K Oct 11 12:28 .bash_history
+-rw-r--r-- 1 hacker hacker  220 Feb 25  2020 .bash_logout
+-rw-r--r-- 1 hacker hacker 3.7K Feb 25  2020 .bashrc
+drwx------ 4 hacker hacker 4.0K Oct  1 13:22 .cache
+drwx------ 5 hacker hacker 4.0K Oct  1 18:26 .config
+drwx------ 3 hacker hacker 4.0K Oct  1 13:22 .dbus
+-rw------- 1 hacker hacker   34 Oct  4 19:53 .lesshst
+drwxr-xr-x 3 hacker hacker 4.0K Oct  1 13:22 .local
+-rw-r--r-- 1 hacker hacker  807 Feb 25  2020 .profile
+-rw-r--r-- 1 hacker hacker    4 Oct  6 10:26 COLLEGE
+drwxr-xr-x 2 hacker hacker 4.0K Oct  1 13:22 Desktop
+-rw-r--r-- 1 hacker hacker    8 Oct  6 11:05 PWN
+-rw-r--r-- 1 hacker hacker    0 Oct  4 13:05 college
+-rw-r--r-- 1 root   hacker   77 Oct  6 15:02 echo
+-rw-r--r-- 1 hacker hacker  829 Oct  6 10:59 instructions
+-rw-r--r-- 1 root   hacker   17 Oct  6 19:25 intercept
+-rw-r--r-- 1 root   hacker   77 Oct  6 13:18 intercept-2
+-rw-r--r-- 1 hacker hacker   93 Oct  6 10:59 myflag
+lrwxrwxrwx 1 hacker hacker    5 Oct  4 13:39 not-the-flag -> /flag
+-rw-r--r-- 1 root   hacker   17 Oct  6 15:09 out
+-rw-r--r-- 1 root   hacker   77 Oct  6 13:20 pwn_output.txt
+-rw-r--r-- 1 hacker hacker  435 Oct  6 10:49 the-flag
+-rw-r--r-- 1 root   hacker   58 Oct  4 15:28 x
+root@permissions~the-suid-bit:~# cat /flag
+pwn.college{skxQKsrD7qSuUqEq807idPMUUIA.dNTM2QDLxUjN0czW}
+```
