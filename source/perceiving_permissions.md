@@ -28,3 +28,12 @@ hacker@permissions~fun-with-groups-names:~$ cat /flag
 pwn.college{Q5mO0Vn2jY6BoYR2Kk77TxmQONo.dJzNyUDLxUjN0czW}
 hacker@permissions~fun-with-groups-names:~$ 
 ```
+
+### Changing permissions
+Use `chmod a+r /flag` to add read permissions for all users on the `/flag` file. This allows the `hacker` user to access and read the file despite not owning it or being part of the owning group. Then, execute `cat /flag` to display the flag.
+```bash
+hacker@permissions~changing-permissions:~$ chmod a+r /flag
+hacker@permissions~changing-permissions:~$ cat /flag
+pwn.college{kzQDu1XTQcAngBwupUGbR99czWC.dNzNyUDLxUjN0czW}
+hacker@permissions~changing-permissions:~$ 
+```
