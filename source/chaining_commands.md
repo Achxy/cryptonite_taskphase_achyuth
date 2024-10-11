@@ -18,3 +18,12 @@ Great job, you've written your first shell script! Here is the flag:
 pwn.college{oXpm7HolZMDwoK4eFwogbMoL_pM.dFzN4QDLxUjN0czW}
 hacker@chaining~your-first-shell-script:~$ 
 ```
+
+### Redirecting script output
+We use the same `x.sh` we created in the last challenge, provide it to `bash` as argument and pipe it to `/challenge/solve`.
+```bash
+hacker@chaining~redirecting-script-output:~$ bash x.sh | /challenge/solve
+Correct! Here is your flag:
+pwn.college{0ac9nP_z0U-uB7mgShHw5szyV_G.dhTM5QDLxUjN0czW}
+hacker@chaining~redirecting-script-output:~$ 
+```
