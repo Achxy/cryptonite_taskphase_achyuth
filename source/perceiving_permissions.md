@@ -17,3 +17,14 @@ hacker@permissions~groups-and-files:~$ cat /flag
 pwn.college{0cw8vOx10Ja9rh0blqOoB_S5PTO.dFzNyUDLxUjN0czW}
 hacker@permissions~groups-and-files:~$ 
 ```
+
+### Fun with group names
+Run the `id` command to determine your current group name. Use `chgrp [your_group] /flag` (in this case `grp16875`) to change the group ownership of the `/flag` file to your group. This modification grants your user the permissions needed to access the file. Finally, execute `cat /flag` to read and obtain the flag.
+```bash
+hacker@permissions~fun-with-groups-names:~$ id
+uid=1000(hacker) gid=1000(grp16875) groups=1000(grp16875)
+hacker@permissions~fun-with-groups-names:~$ chgrp grp16875 /flag
+hacker@permissions~fun-with-groups-names:~$ cat /flag
+pwn.college{Q5mO0Vn2jY6BoYR2Kk77TxmQONo.dJzNyUDLxUjN0czW}
+hacker@permissions~fun-with-groups-names:~$ 
+```
