@@ -20,6 +20,6 @@
 
 <div align="center">
 
-[(&#x2B06;&#xFE0F; TP 1)](https://github.com/Achxy/cryptonite_taskphase_achyuth) | [&#x1F6AB; TP 2](https://github.com/Achxy/cryptonite_taskphase_2_achyuth)
+[(&#x2B06;&#xFE0F; TP 1)](https://github.com/Achxy/cryptonite_taskphase_achyuth) | [&#x27A1;&#xFE0F; TP 2](https://github.com/Achxy/cryptonite_taskphase_2_achyuth)
 
 </div>
