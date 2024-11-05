@@ -1,4 +1,4 @@
-![Cryptonite header](/assets/header_cryptonite.jpg)
+![Cryptonite header](/assets/meta/header_cryptonite.jpg)
 
 ## Day 1-10
 
@@ -17,3 +17,9 @@
 - [**Untangling Users**](./source/untangling_users.md)
 - [**Chaining Commands**](./source/chaining_commands.md)
 - [**Pondering PATH**](./source/pondering_path.md)
+
+<div align="center">
+
+[(&#x2B06;&#xFE0F; TP 1)](https://github.com/Achxy/cryptonite_taskphase_achyuth) | [&#x1F6AB; TP 2](https://github.com/Achxy/cryptonite_taskphase_2_achyuth)
+
+</div>
